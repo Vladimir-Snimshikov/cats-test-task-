@@ -8,6 +8,7 @@ body {
 @import url(./blocks/cards/__but/cards__but.css);
 @import url(./blocks/cards/__description/cards__description.css);
 @import url(./blocks/cards/__figcaption-text/cards__figcaption-text.css);
+@import url(./blocks/cards/__figcaption-text/_in-active/cards__figcaption-text_in-active.css);
 @import url(./blocks/cards/__item-container/cards__item-container.css);
 @import url(./blocks/cards/__item-container/_active/cards__item-container_active.css);
 @import url(./blocks/cards/__item-disabled/cards__item-disabled.css);

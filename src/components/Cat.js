@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import React from 'react';
 
 export default function Cat({
@@ -13,8 +13,14 @@ export default function Cat({
     cardId: id,
     status: 'pending',
     cardText: 'Сказачное заморское явство',
-    count: 1,
+    count: 3,
   });
+
+  const [isCont, setIscount] = useState(true);
+
+  useEffect(() => {
+    cardState.count > 0 ? setIscount(true) : setIscount(false);
+  }, [cardState]);
 
   function handlerClickCard() {
     if (cardState.status === 'pending') {
@@ -63,14 +69,20 @@ export default function Cat({
           <p className="cards__oval-text">кг</p>
         </div>
       </figure>
-      <figcaption className="cards__figcaption-text">
-        {cardState.count < 1
-          ? `печалька, с ${catsSubtitle} закончился`
-          : catsDescription}
-        <a onClick={handlerClickCard} className="cards__but">
-          {` купи`}
-        </a>
+      <figcaption
+        className={`cards__figcaption-text ${
+          !isCont ? 'cards__figcaption-text_in-active' : ''
+        }`}
+      >
+        {!isCont ? `печалька, с ${catsSubtitle} закончился` : catsDescription}
+        {isCont && (
+          <a onClick={handlerClickCard} className="cards__but">
+            {` купи`}
+          </a>
+        )}
       </figcaption>
     </li>
   );
 }
+
+/* cards__figcaption - text_in - active; */
