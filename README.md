@@ -1,6 +1,6 @@
 # Проэкт:Cats
 
-- [Ссылка на проект](https://vladimir-snimshikov.github.io/mesto-react/)
+- [Ссылка на проект](https://vladimir-snimshikov.github.io/cats-test-task-/)
 
 ## Обзор
 
