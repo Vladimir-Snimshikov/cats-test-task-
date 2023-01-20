@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./TrebuchetMS-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./TrebuchetMS.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Exo2.0';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./Exo20-Thin.woff') format('woff');
+}

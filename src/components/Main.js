@@ -1,33 +1,12 @@
-import { useEffect, useState } from 'react';
 import Cat from './Cat';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 export default function Main() {
-  const [isActive, setIsActive] = useState({
-    1: 'pending',
-    2: 'pending',
-    3: 'pending',
-  });
-  const [catsText, setCatsText] = useState('Cказочное заморское яство');
-
-  function cardClick(id) {
-    if (isActive[id] === 'active') {
-      setIsActive({ ...isActive, [id]: 'pending' });
-    }
-    if (isActive[id] === 'pending') {
-      setIsActive({ ...isActive, [id]: 'active' });
-    }
-  }
-
   return (
     <main className="content">
       <section className="cats">
         <h2 className="cats__title"> Ты сегодня покормил кота?</h2>
         <ul className="cards">
           <Cat
-            click={cardClick}
-            isActive={isActive}
-            catsText={catsText}
             catsTitle="Нямушка"
             catsSubtitle="с курой"
             catsOvalText="0,5"
@@ -40,9 +19,6 @@ export default function Main() {
             <p className="cards__description">мышь в подарок</p>
           </Cat>
           <Cat
-            click={cardClick}
-            isActive={isActive}
-            catsText={catsText}
             catsTitle="Нямушка"
             catsSubtitle="с курой"
             catsOvalText="2"
@@ -58,9 +34,6 @@ export default function Main() {
             </p>
           </Cat>
           <Cat
-            click={cardClick}
-            isActive={isActive}
-            catsText={catsText}
             catsTitle="Нямушка"
             catsSubtitle="с курой"
             catsOvalText="5"

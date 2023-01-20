@@ -1,0 +1,8 @@
+.cats {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  background-image: url('/public/Pattern.jpg');
+  padding-top: 24px;
+}

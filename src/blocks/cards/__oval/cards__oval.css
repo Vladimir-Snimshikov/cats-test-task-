@@ -1,0 +1,15 @@
+.cards__oval {
+  position: absolute;
+  bottom: 45px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #2ea8e6;
+  box-sizing: border-box;
+}
